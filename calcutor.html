@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calcu" class="container phone mt-5 pb-5">
+    <div class="row p-5 ">
+    <div class="col-md-12 p-0 text-center">
+        <input class="text-center resultCalc" type="text" id="result">
+    </div>
+    </div>
+    <div class="row p-2 ">
+    <div class="col-md-3 text-center ">
+        <input class="numBtn bg-light text-dark " type="button" value="AC" onclick="clr()" />
+    </div>
+    
+    <div class="col-md-3 text-center ">
+        <input class="numBtn bg-light text-dark" type="button" value="C" onclick="clrTwo()" />
+    </div>
+    <div class="col-md-3">
+        <input class="numBtn bg-light text-dark" type="button" value="%" onclick="dis('%')"
+        onkeydown="myFunction(event)">
+    </div>
+    <div class="col-md-3 text-center">
+        <input class="numBtn bg-warning" type="button" value="/" onclick="dis('/')"
+                    onkeydown="myFunction(event)">
+    </div>
+    </div>
+    <div class="row p-2 mt-1">
+    <div class="col-md-3 text-center">
+        <input class="numBtn" type="button" value="1" onclick="dis('2')"
+                        onkeydown="myFunction(event)">
+    </div>
+    <div class="col-md-3 text-center">
+        <input class="numBtn" type="button" value="2" onclick="dis('2')"
+                        onkeydown="myFunction(event)">
+    </div>
+    <div class="col-md-3 text-center">
+        <input class="numBtn" type="button" value="3" onclick="dis('3')"
+                        onkeydown="myFunction(event)">
+    </div>
+    
+    <div class="col-md-3 text-center">
+        <input class="numBtn bg-warning" type="button" value="*" onclick="dis('*')"
+                    onkeydown="myFunction(event)"> 
+    </div>
+    </div>
+    <div class="row p-2 mt-1">
+        <div class="col-md-3 text-center">
+            <input class="numBtn" type="button" value="4" onclick="dis('4')"
+            onkeydown="myFunction(event)">
+        </div>
+        <div class="col-md-3 text-center">
+            <input class="numBtn" type="button" value="5" onclick="dis('5')"
+                        onkeydown="myFunction(event)">
+        </div>
+        <div class="col-md-3 text-center">
+            <input class="numBtn" type="button" value="6" onclick="dis('6')"
+            onkeydown="myFunction(event)">
+        </div>
+        
+        <div class="col-md-3 text-center">
+            <input class="numBtn bg-warning" type="button" value="-" onclick="dis('-')"
+            onkeydown="myFunction(event)"> 
+        </div>
+        </div>
+        <div class="row p-2 mt-1">
+            <div class="col-md-3 text-center">
+                <input class="numBtn" type="button" value="7" onclick="dis('7')"
+            onkeydown="myFunction(event)">
+            </div>
+            <div class="col-md-3 text-center">
+                <input class="numBtn" type="button" value="8" onclick="dis('8')"
+            onkeydown="myFunction(event)">
+            </div>
+            <div class="col-md-3 text-center">
+                <input class="numBtn" type="button" value="9" onclick="dis('9')"
+            onkeydown="myFunction(event)">
+            </div>
+            
+            <div class="col-md-3 text-center">
+                <input class="numBtn bg-warning" type="button" value="+" onclick="dis('+')"
+                    onkeydown="myFunction(event)">
+            </div>
+            </div>
+            <div class="row p-2 mt-1">
+                <div class="col-md-6 text-center">
+                    <input class="numBtnZero " type="button" value="0" onclick="dis('0')"
+                onkeydown="myFunction(event)">
+                </div>
+                <div class="col-md-3 text-center">
+                    <input class="numBtn" type="button" value="." onclick="dis('.')"
+                onkeydown="myFunction(event)">
+                </div>
+                <div class="col-md-3 text-center">
+                    <input class="numBtn bg-warning " type="button" value="=" onclick="solve()"
+                onkeydown="myFunction(event)">
+                </div>
+                </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
